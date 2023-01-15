@@ -1,6 +1,9 @@
 name: shell Commands
 
-on : [push, pull_request]
+on : 
+  push:
+    branches:
+      - "dev"
 
 jobs:
   run-shell-command:
