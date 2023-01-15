@@ -1,6 +1,10 @@
 name: greet-time
 
-on : [push]
+on : 
+  push:
+    branches-ignore:
+      - "dev"
+
 
 jobs:
   github-actions:
