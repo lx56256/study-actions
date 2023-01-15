@@ -1,8 +1,20 @@
 name: greet-time
 
 on :
-  repository_dispatch:
-    types: [build]
+  push:
+    branches:
+      - main
+    #   - 'feature/**'
+    #   - '!feature/featureC'
+    # tags:
+    #   - "v1.*"
+    # paths: 
+    #   - "**.js"
+    # paths-ignore:
+    #   - "/docs"
+
+  # repository_dispatch:
+  #   types: [build]
   # schedule:
   #   - cron: "0/5 * * * *"
   #   - cron: "0/6 * * * *"
