@@ -1,0 +1,15 @@
+name: Container
+
+on: push
+
+jobs:
+  docker-Container-job: 
+      runs-on: ubuntu-latest
+      container:
+        image: node:14.21.2-alpine
+      steps:
+        - name: log node Version
+          run: |
+            node -v
+            cat /etc/os-release
+
