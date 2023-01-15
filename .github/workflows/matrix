@@ -1,4 +1,4 @@
-name: Matrix action
+name: node-version-test
 
 on: push
 
